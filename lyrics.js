@@ -61,7 +61,7 @@ function lyricsGet(id) {
 
 function lennox(lyrics){
 
-var lennyLyrics = lyrics.replace(/\bi\b/gi, "Ty").replace(/\byou\b/gi, "Proulx").replace(/\bme\b/gi, "Weebs").replace(/girl/gi, "Merle").replace(/boy/gi, "Roy");
+var lennyLyrics = lyrics.replace(/\bi\b(?!')/gi, "Ty").replace(/\byou(?!')\b/gi, "Proulx").replace(/\bme\b/gi, "Weebs").replace(/girl/gi, "Merle").replace(/boy/gi, "Roy");
 console.log('-----------------------------------------------------------------------\n');
 console.log(lennyLyrics);
 console.log('-----------------------------------------------------------------------\n');
